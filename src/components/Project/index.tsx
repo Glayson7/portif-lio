@@ -47,7 +47,7 @@ export const Project = (): JSX.Element => {
           <ProjectWrapper key={repository.id}>
             <ProjectTitle
               as="h2"
-              type="heading3"
+              type="heading4"
               css={{ marginBottom: "$3" }}
               color="grey4"
             >

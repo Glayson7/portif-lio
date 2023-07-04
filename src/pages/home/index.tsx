@@ -7,6 +7,7 @@ import { Button } from "@/styles/Buttons";
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import About from "@/pages/about";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -47,7 +48,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
@@ -66,7 +67,10 @@ export const Home = (): JSX.Element => {
                 See Projects
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                See my portfolio
+              </Button>
+              <Button as="a" type="outline" href="#projects">
+                About me
               </Button>
               <Button
                 color="grey5"
@@ -91,7 +95,10 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
+              <Text as="h1" id="about">
+                <About />
+              </Text>
+              <Text as="h2" type="heading2" color="grey4">
                 My projects
               </Text>
               <Text as="p" type="body1" color="grey2">
